@@ -1,0 +1,25 @@
+*{padding: 0;margin: 0}/*清除浏览器内建样式*/
+
+
+.center{
+	height: 900px;
+	width: 100%;
+	
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center;
+}
+.biao,.biao2{
+	margin: 0 auto;
+	
+}
+.biao td,.biao2 td{
+	border-collapse: collapse;
+	width: 80px;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.5);
+}
+.sscore{
+	height: 30px;
+	color: white;
+}

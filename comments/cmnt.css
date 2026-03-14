@@ -1,0 +1,54 @@
+*{padding: 0;margin: 0}/*清除浏览器内建样式*/
+
+.center{
+	height: 700px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.main{
+	text-align: center;
+	background-color: rgba(255,255,255, 0.5);
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	/*display: flex;*/
+	/*justify-content: center; /* 水平居中 */
+	/*align-items: center;     /* 垂直居中 */
+}
+.main p{
+	text-align: left;
+}
+.main .titleINcmnt{
+	font-size: 40px;
+	font-weight: bold;
+}
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: calc(26% - 10px); /* 将每个输入框的宽度设置为 33%，并减去空隙 */
+  margin: 5px; /* 添加输入框之间的空隙 */
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: orange; /* 按钮背景颜色橙色 */
+  border: none; /* 去掉按钮的边框 */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: darkorange; /* 悬浮时变为暗橙色 */
+}
+
+input[type="text"]::placeholder {
+  color: #888; /* 输入框的占位符文字颜色 */
+}

@@ -1,0 +1,78 @@
+*{padding: 0;margin: 0}/*清除浏览器内建样式*/
+
+.main{
+	background-size: 100% auto; /* 设置背景图片宽度为100%，高度自动适应 */
+	background-repeat: repeat-y; /* 背景图片在垂直方向上重复 */
+	/*background-color: rgba(206,255,255, 0.5);*/
+	height: 900px;
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.box1,.box2,.box3{
+	width: 70%;
+	background-color: rgba(255,255,255, 0.5);
+	padding: 20px 15px;
+	text-align: left;
+	margin: 0 auto;
+}
+.title{
+	color: blue;
+	font-weight: bold;
+}
+.text{
+	padding-left: 15px;
+}
+.box2 span{
+	background-color: #ceffff;
+	color:blue;
+	font-weight: bold;
+	margin-left: 10px;
+	border-radius: 6px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.box1{
+	margin-top: 15px;
+}
+.box2{
+	margin-top: 15px;
+}
+.box1:hover,.box2:hover{
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	transform: translate(5px, -5px);
+	transition: transform 0.7s ease;
+}
+.box3{
+	display: flex;
+	
+}
+.picbox{
+	width: 160px;
+	
+}
+.picbox img{
+	width:100%;
+}
+.likbox img{
+	width: 50px;
+}
+.likbox a{
+	margin-left: 30px;
+	text-decoration: none;
+}
+.name{
+	font-size: 40px;
+	color:white;
+}
+.likbox a {
+  display: inline-block;       /* 让 transform 生效且可预测 */
+  margin-left: 30px;
+  text-decoration: none;
+ 
+}
+.likbox a:hover {
+   transform: translate(5px, -5px);
+   transition: transform 0.7s ease;
+}

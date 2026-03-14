@@ -1,0 +1,110 @@
+*{padding: 0;margin: 0}
+.moer{
+	position: fixed; /* 固定定位 */
+	bottom: 20px;    /* 距离底部 20px */
+	right: 20px;     /* 距离右侧 20px */
+	width: 260px;    /* 设置宽度 */
+	height: 330px;   /* 设置高度 */
+	color: white;    /* 白色字体 */
+	padding: 10px;   /* 内边距 */
+	overflow: hidden; /* 内容溢出隐藏 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.msimg1,.msimg2{
+	position: absolute;
+	top:129px;
+	left:50%;
+	transform-origin: center;
+	object-fit: cover;
+}
+.msimg1{
+	animation: rotateImage1 5s infinite linear;
+	width: 230px;
+}
+.msimg2{
+	animation: rotateImage2 5s infinite linear;
+	width: 170px;
+}
+.agimg{
+	width: 100px;
+	position: absolute;
+	top:0;
+	animation:moveag 4s ease-in-out infinite;
+}
+.overlay{
+	position: relative;
+	top:90px;
+	left:50px;
+	width:100px;
+	height: 170px;
+	transform: translate(-50%,-50%);
+	z-index:2;
+}
+@keyframes rotateImage1 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);  /* 初始位置 */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);  /* 完成360度顺时针旋转 */
+    }
+}
+@keyframes rotateImage2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);  /* 初始位置 */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);  /* 完成360度逆时针旋转 */
+    }
+}
+@keyframes moveag {
+	0%{
+		top:0;
+	}
+	50%{
+		top:calc(100% - 150px);
+	}
+	100%{
+		top:0;
+	}
+}
+.buttons{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width:100px;
+	height: 50px;
+}
+.player{
+	position: relative;
+	perspective: 800px;
+	width:50px;
+	height:50px;
+	cursor: pointer; z-index: 5;transform-style: preserve-3d;
+}
+.play,.stop{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	backface-visibility: hidden;
+	transition: transform 0.5s;
+	transform-origin: center center;
+}
+.play{
+	pointer-events: none;
+	transform: rotateX(0deg);
+}
+.stop{
+	transform: rotateX(180deg);
+}
+.flipped .play{
+	transform: rotateX(180deg);pointer-events: auto;
+}
+.flipped .stop{transform: rotateX(0deg);pointer-events: none;}
+.top{
+	width: 50px;
+}

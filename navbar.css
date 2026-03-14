@@ -1,0 +1,32 @@
+*{padding: 0;margin: 0}/*清除浏览器内建样式*/
+.logo img{
+	height: 100px;
+}
+.logo{
+	background-color:rgba(255,255,255,0.8);height: 100px;
+}
+.head{
+	width:100%;
+	height:50px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: left;
+	margin-bottom: 15px;
+}
+.head a:link,.head a:visited{
+	color: white;
+	text-decoration: none;
+}
+.head a:hover .link{
+	background-color:rgba(255,255,255,0.2);
+}
+.link{
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+}
+body{
+	background-image: url('./pictures/thesea.gif');
+	background-size:cover;
+	background-position:center center;
+}

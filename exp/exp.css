@@ -1,0 +1,29 @@
+*{padding: 0;margin: 0}/*清除浏览器内建样式*/
+
+.center{
+	height: 700px;
+	width: 100%;
+	height: 900px;
+	margin: 0 auto;
+	
+}
+.list{
+	background-color: rgba(255,255,255, 0.5);
+	width: 80%;
+	margin: 0 auto;
+	padding:23px;
+}
+.list dl:hover{
+	background-color: rgba(175,238,238,0.5);
+	box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.center .title {
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 20px;
+}
+li{
+	border-left: 3px solid #00FFFF;
+	margin: 10px;
+}
